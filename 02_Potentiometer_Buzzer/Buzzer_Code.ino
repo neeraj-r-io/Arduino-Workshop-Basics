@@ -6,7 +6,7 @@ pinMode(piezo, OUTPUT);
 }
 
 void loop(){
-int potValue = anlogRead(pot);
+int potValue = analogRead(pot);
 int volume = map(potValue,0,1023,0,255);
 analogWrite(piezo,volume);
 delay(10);
